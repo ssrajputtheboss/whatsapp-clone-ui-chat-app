@@ -1,0 +1,94 @@
+.chat{
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+}
+
+.chat_header{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.chat_header_info{
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat_header_info > .room_name{
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat_header_info > .last_seen{
+  color: grey;
+}
+
+.chat_body{
+  flex: 1;
+  background-image: url("https://www.fonewalls.com/wp-content/uploads/2020/02/WhatsApp-Background-Wallpaper-27.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat_message{
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chat_reciever_message{
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.chat_timestamp{
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat_name{
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+/* TODO:  */
+.chat_foot{
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.chat_message_send{
+  flex: 0.9;
+  height: 39px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+}
+
+.chat_foot > input {
+  border: none;
+  outline-width: 0;
+  margin-left: 10px;
+}
+
+#send_icon{
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}

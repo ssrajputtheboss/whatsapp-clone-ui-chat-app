@@ -1,0 +1,56 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+.sidebar_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgrey;
+}
+
+.header_right{
+  margin-right: 2vw;
+  font-size: 24px;
+}
+
+.sidebar_search{
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 39px;
+  width: 100%;
+  padding: 20px;
+
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 39px;
+  width: 100%;
+  padding: 20px;
+}
+
+.search_container > .MultiSvgIcon-root{
+  color: grey;
+  padding: 10px;
+}
+
+.search_container > input {
+  border: none;
+  outline-width: 0;
+  margin-left: 10px;
+}
+
+.sidebar_chats{
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
